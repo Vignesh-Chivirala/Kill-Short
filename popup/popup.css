@@ -1,0 +1,131 @@
+:root {
+  --bg: #0f172a;
+  --card: #0b1220;
+  --accent: #7c3aed;
+  --muted: #9aa4b2;
+  --radius: 12px;
+}
+
+html,
+body {
+  width: 340px; 
+  height: 280px; 
+  margin: 0;
+  padding: 0;
+  overflow: auto; 
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+  background: linear-gradient(180deg, #071126, #0b1220);
+  color: #e6eef8;
+}
+
+.container {
+  padding: 16px;
+  max-width: 320px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  padding: 14px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+p.lead {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.switch {
+  width: 44px;
+  height: 26px;
+  background: #333a4d;
+  border-radius: 999px;
+  position: relative;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease;
+}
+
+.knob {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: left 0.2s ease, background 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.switch.on {
+  background:  #28C2FF
+}
+
+.switch.on .knob {
+  left: 21px;
+}
+
+.status-label {
+  font-size: 12px;
+  color: var(--muted);
+  width: 30px;
+  text-align: left;
+  user-select: none;
+}
+
+.switch.on + .status-label {
+  color: #28C2FF;
+  font-weight: 600;
+}
+
+button.primary {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  background:  #34d1bf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.small {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.links a {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+
